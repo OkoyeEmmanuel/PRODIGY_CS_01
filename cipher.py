@@ -2,6 +2,7 @@
 validnumber = False
 
 while validnumber == False:
+   print('============================')
    print('Welcome to the Caesar Cipher Program')
    print('============================')
    print('Options:')
