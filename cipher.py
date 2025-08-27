@@ -16,20 +16,18 @@ while validnumber == False:
       encryptkey = input('Enter the encryption shift key: ')
       encrypted = ''
       for x in plaintext:
-         if x.isalpha():
+
           encrypted = encrypted + chr(ord(x) +int(encryptkey))
-         else:
-          encrypted = encrypted + x
+         
       print('Encrypted Message: ' + encrypted)
    elif option == '2':
       encryptedmessage = input('Enter the message to decrypt: ')
       decrypted = ''
       decryptkey = input('Enter the decryption shift key: ')
       for x in encryptedmessage:
-         if x.isalpha():
+         
             decrypted = decrypted + chr(ord(x) - int(decryptkey))
-         else:
-            decrypted = decrypted + x
+         
       print('Decrypted Message: ' + decrypted)
    elif option == '3':
       validnumber = True
